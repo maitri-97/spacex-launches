@@ -1,7 +1,9 @@
-import React from "react";
+
 
 const LaunchDetails = () => {
-  return <div>LaunchDetail</div>;
+  return (
+    <div>Launch Details..</div>
+  )
 };
 
 export default LaunchDetails;
