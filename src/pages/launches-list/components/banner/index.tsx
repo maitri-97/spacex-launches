@@ -1,8 +1,9 @@
 import { FC } from "react";
-import DefaultCoverImage from "../../assets/images/cover-img.jpg";
+import DefaultCoverImage from "../../../../assets/images/cover-img.jpg";
 import styled from "styled-components";
 import Title, { PageTitleProps } from "./components/Title";
-import Container from "../container";
+import Container from "../../../../components/shared/Container";
+import SearchBlock from "./components/SearchBlock";
 
 interface Props extends PageTitleProps {
   coverImage?: string;
@@ -17,8 +18,9 @@ const Banner: FC<Props> = ({ pageTitle, coverImage }) => {
           className="flex items-center justify-center relative"
         >
           {pageTitle && (
-            <Container>
-              <Title pageTitle={pageTitle} />
+            <Container className="relative z-[1]">
+              <Title pageTitle={pageTitle} className="mb-3" />
+              <SearchBlock />
             </Container>
           )}
         </BannerWrap>

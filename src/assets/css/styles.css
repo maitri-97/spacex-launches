@@ -7,11 +7,61 @@
 @layer base {
   html {
     font-family: "Poppins-Regular", system-ui, sans-serif;
+    color-scheme: dark;
   }
 }
 
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
 
 ::selection {
   color: #000000;
   background: #ffffff;
+}
+
+.custom-select.react-dropdown-select {
+  height: 40px;
+}
+
+.custom-select.react-dropdown-select
+  .react-dropdown-select-dropdown
+  .react-dropdown-select-item,
+.custom-select.react-dropdown-select .notFound {
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 5px 10px;
+}
+
+.custom-select.react-dropdown-select li.highlightOption,
+.custom-select.react-dropdown-select
+  .react-dropdown-select-dropdown
+  .react-dropdown-select-item:hover {
+  background: #ffffff;
+  color: #004fff;
+}
+
+.custom-select.react-dropdown-select:hover,
+.custom-select.react-dropdown-select:focus-within {
+  border-color: #004fff;
+  box-shadow: none;
+}
+
+.custom-select.react-dropdown-select .singleSelect .searchBox {
+  display: none;
+}
+
+.custom-select.react-dropdown-select .checkbox {
+  background-color: red;
+}
+
+.custom-select.react-dropdown-select .react-dropdown-select-item-selected {
+  background: transparent;
+  color: #004fff !important;
+}
+
+.custom-select.react-dropdown-select .react-dropdown-select-option{
+  background: #004fff;
 }
